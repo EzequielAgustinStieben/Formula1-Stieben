@@ -1,0 +1,461 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+html{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+
+}
+
+/*css de incio*/
+
+.grid__inicio{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+                         
+}
+
+header{
+
+    grid-area: header;
+
+}
+
+.cab__logo{
+
+    width: 25vh;
+
+}
+
+.cab__nav{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cab__nav__list{
+
+    width: 60%;
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+.cab__nav__link{
+
+    font-size: 150%;
+
+}
+
+.cab__nav__link a{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.cab__nav__link{
+
+    font-size: 150%;
+
+}
+
+main{
+
+    grid-area: main;
+
+}
+
+.dest__titulo{
+
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    font-size: 300%;
+    padding: 1%;
+
+}
+
+.destacado{
+
+    background-color: rgb(200, 200, 200);
+    font-size: 200%;
+    width: 100%; 
+    padding: 1%;
+    display: flex; 
+    align-items: baseline;
+    justify-content: space-evenly;
+
+}
+
+.dest__link{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.dest__link a{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.historia__titulo{
+
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0% 0% 0%;
+
+}
+
+.historia__titulo a{
+
+    text-decoration: none;
+
+}
+
+.historia__titulo a h1{
+
+    color: black;
+   
+}
+
+.historia , .historia__titulo{
+
+    background-color: rgb(255, 43, 43);
+
+}
+
+.historia{ 
+    
+    font-size: 200%;
+    margin: 0% 0% 1% 0%;
+
+}
+
+.historia div{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1%;
+
+}
+
+.otras__secciones{
+
+    display: flex; 
+    align-items: center;
+    font-size: 150%;
+    width: 100%;
+
+}
+
+.otras__secc__equipo , .otras__secc__piloto , .otras__secc__circuito{
+
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.otras__secc__equipo{
+
+    background-image: url(../assets/img/ferrari-logo.png);
+    width: 100%;
+
+}
+
+.otras__secc__piloto{
+
+    background-image: url(../assets/img/schumacher.png);
+    width: 100%;
+
+}
+
+.otras__secc__circuito{
+
+    background-image: url(../assets/img/brasil.png);
+    width: 100%;
+    height: 33.7vh;
+
+}
+
+.otras__secc__equipo , .otras__secc__piloto , .otras__secc__circuito{
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+    padding: 5%;
+
+}
+
+
+
+.otras__secc__equipo a , .otras__secc__piloto a , .otras__secc__circuito a{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+    width: 100%;
+
+}
+
+footer{
+
+    grid-area: footer;
+}
+
+.pie{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1% 1% 1% 0%;
+
+}
+
+.pie__info{
+
+    font-size: 130%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pie__info a{
+
+    font-size: 140%;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+
+}
+
+.pie__redes{
+
+    text-align: end;
+    
+}
+
+.pie__logo{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*css de galeria*/
+
+.grid__galeria{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+.galeria__titulo{
+
+    background-image: url(../assets/img/cars-drivers.png);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.galeria__titulo h1{
+
+    text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+    color: white;
+    font-size: 600%;
+
+}
+
+.titulo__monoplazas , .titulo__pilotos , .titulo__circuitos{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(190, 190, 190);
+    height: 10vh;
+    font-size: 250%;
+    margin: 1% 0% 1% 0%;
+
+}
+
+.img__autos , .img__circuitos , .img__pilotos{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.img__autos div , .img__circuitos div , .img__pilotos div{
+    
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 560px){
+
+    main{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cab__nav{
+       
+        flex-flow: wrap;
+        align-items: center;
+        flex-flow: column;
+    
+    }
+
+    .cab__nav__list{
+
+        height: 30vh;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .cab__nav__link{
+
+        font-size: 120%;
+    
+    }
+
+    .destacado .dest__link img{
+        width: 30%;
+    }
+
+    .dest__titulo{
+
+        font-size: 150%;
+
+    }
+
+    .dest__link{
+
+        font-size: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .historia__titulo{
+
+        font-size: 120%;
+        
+    }
+
+    .historia{
+
+        font-size: 130%;
+        
+    }
+
+    .destacado , .historia , .historia__titulo , .historia div{
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .historia div img{
+
+        width: 50%;
+
+    }
+
+    .otras__secciones{
+
+        font-size: 120%;
+        
+    }
+
+    .otras__secc__circuito , .otras__secc__equipo , .otras__secc__piloto{
+
+        height: 30vh;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    .pie__info{
+
+        font-size: 100%;
+        
+    }
+
+    .pie__redes div a img{
+
+        width: 8%;
+
+    }
+
+    .galeria__titulo{
+        height: 25vh;
+    }
+
+    .galeria__titulo h1{
+        font-size: 350%;
+    }
+
+    .titulo__monoplazas , .titulo__pilotos , .titulo__circuitos{
+        font-size: 175%;
+        height: 5vh;
+    }
+
+    .img__autos , .img__circuitos , .img__pilotos{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .img__autos div , .img__circuitos div , .img__pilotos div{
+        width: 30%;
+    }
+
+}
