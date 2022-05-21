@@ -60,7 +60,7 @@ header{
 .cab__nav__link{
 
     font-size: 150%;
-
+    
 }
 
 .cab__nav__link a{
@@ -70,10 +70,10 @@ header{
 
 }
 
-.cab__nav__link{
-
-    font-size: 150%;
-
+.cab__nav__link a:hover{
+    
+    font-weight: bolder;
+    
 }
 
 main{
@@ -213,8 +213,6 @@ main{
 
 }
 
-
-
 .otras__secc__equipo a , .otras__secc__piloto a , .otras__secc__circuito a{
 
     display: flex;
@@ -331,7 +329,13 @@ footer{
 .img__autos div , .img__circuitos div , .img__pilotos div{
     
     width: 100%;
+    flex-flow: wrap;
+}
+
+.img__autos div img:hover, .img__circuitos div img:hover, .img__pilotos div img:hover{
     
+    transform: scale(1.5);
+
 }
 
 @media screen and (max-width: 560px){
