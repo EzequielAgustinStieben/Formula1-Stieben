@@ -336,6 +336,51 @@ footer{
 
 @media screen and (max-width: 560px){
 
+    .cab__nav__link{
+
+        font-size: 110%;
+    
+    }
+
+    .dest__titulo{
+
+        font-size: 145%;
+
+    }
+
+    .dest__link{
+
+        font-size: 45%;
+
+    }
+
+    .historia__titulo{
+
+        font-size: 105%;
+        
+    }
+
+    .historia{
+
+        font-size: 115%;
+        
+    }
+
+    .otras__secciones{
+
+        font-size: 120%;
+        flex-flow: wrap;
+        
+    }
+
+    .otras__secc__circuito{
+        height: initial;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+
     main{
 
         display: flex;
@@ -365,7 +410,9 @@ footer{
     }
 
     .destacado .dest__link img{
+
         width: 30%;
+
     }
 
     .dest__titulo{
@@ -411,15 +458,16 @@ footer{
 
     .otras__secciones{
 
-        font-size: 120%;
+        font-size: 130%;
+        flex-flow: wrap
         
     }
 
     .otras__secc__circuito , .otras__secc__equipo , .otras__secc__piloto{
 
-        height: 30vh;
+        height: 20vh;
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
 
     }
 
