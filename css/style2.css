@@ -336,6 +336,19 @@ footer{
 
 @media screen and (max-width: 560px){
 
+    main{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .destacado .dest__link img{
+
+        width: 35%;
+
+    }
+
     .cab__nav__link{
 
         font-size: 110%;
@@ -344,13 +357,13 @@ footer{
 
     .dest__titulo{
 
-        font-size: 145%;
+        font-size: 160%;
 
     }
 
     .dest__link{
 
-        font-size: 45%;
+        font-size: 60%;
 
     }
 
@@ -364,6 +377,22 @@ footer{
 
         font-size: 115%;
         
+    }
+
+    .historia div img{
+
+        width: 40%;
+
+    }
+
+    .destacado , .historia , .historia__titulo , .historia div{
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around;
+
     }
 
     .otras__secciones{
