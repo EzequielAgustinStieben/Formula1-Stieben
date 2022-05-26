@@ -9,36 +9,50 @@
         <title>Formula 1</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css-bootstrap/bootstrap.min.css">
 
     </head>
 
     <body>
         <div class="grid__inicio">
             <!--Comienzo del encabezado.-->
+            
             <header>
                 
-                    <!--Barra de navegación entre Páginas en una lista desordenada.-->
-                    <nav class="cab__nav">
-
+                <!--Barra de navegación entre Páginas en una lista desordenada.-->
+                <nav class="cab__nav navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        
                         <!--Logo con enlace a la Página de inicio.-->
                         <a href="index.html">
                             <img src="assets/img/f1-10.png" alt="Logo" class="cab__logo"/>
                         </a>
-            
-                        <ul class="cab__nav__list">
-
-                            <li class="cab__nav__link"><a href="index.html">Inicio</a></li>
-                            <li class="cab__nav__link"><a href="pages/historia.html">Historia</a></li>
-                            <li class="cab__nav__link"><a href="pages/equipo.html">Equipos Destacados</a></li>
-                            <li class="cab__nav__link"><a href="pages/pilotos.html">Pilotos Destacados</a></li>
-                            <li class="cab__nav__link"><a href="pages/circuito.html">Circuitos Destacados</a></li>
-                            <li class="cab__nav__link"><a href="pages/galeria.html">Galería</a></li>
-                            <li class="cab__nav__link"><a href="pages/contacto.html">Contacto</a></li>
-
-                        </ul>       
                         
-                    </nav>
 
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            
+                            <ul class="cab__nav__list navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="cab__nav__link nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                                <li class="cab__nav__link nav-item"><a class="nav-link" href="pages/historia.html">Historia</a></li>
+                                <li class="cab__nav__link nav-item "><a class="nav-link" href="pages/equipo.html">Equipos Destacados</a></li>
+                                <li class="cab__nav__link nav-item "><a class="nav-link" href="pages/pilotos.html">Pilotos Destacados</a></li>
+                                <li class="cab__nav__link nav-item "><a class="nav-link" href="pages/circuito.html">Circuitos Destacados</a></li>
+                                <li class="cab__nav__link nav-item "><a class="nav-link" href="pages/galeria.html">Galería</a></li>
+                                <li class="cab__nav__link nav-item "><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+
+                            </ul>     
+
+                        </div>
+
+                    </div>
+
+                </nav>
+            
             </header>
             <!--Cierre de encabezado.-->
             <!--Comienzo de la sección principal.-->
@@ -46,54 +60,56 @@
 
                 <h2 class="dest__titulo">Destacados</h2>
                 
-                <!--Sección con items Destacados.-->
-                <section class="destacado">
-
-                    <div class="dest__link">
-
-                        <a href="pages/pilotos.html#1950-1969">
-                                <h3>Piloto</h3>
-                        </a>
-                        <img src="assets/img/fangio.png" width="50%" alt="IMG"/>
-
+                <section class="d-flex justify-content-center">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="pages/pilotos.html#1950-1969"><img src="assets/img/fangio.png" class="d-block w-100" alt="img"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Piloto</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="pages/equipo.html#2010-2022"><img src="assets/img/mercedes-logo.png" class="d-block w-100" alt="img"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Equipo</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="pages/circuito.html#actuales"><img src="assets/img/monaco-1.png" class="d-block w-100" alt="img"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Circuito</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <a href="pages/historia.html#cambios"><img src="assets/img/drs.png" class="d-block w-100" alt="img"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cambios</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <a href="pages/historia.html#innovaciones"><img src="assets/img/lotus.png" class="d-block w-100" alt="img"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Innovaciones</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-
-                    <div class="dest__link">
-
-                        <a href="pages/equipo.html#2010-2022">
-                                <h3>Equipo</h3>
-                        </a>
-                        <img src="assets/img/mercedes-logo.png" width="60%" alt="IMG" />
-
-                    </div>
-
-                    <div class="dest__link">
-
-                        <a href="pages/circuito.html#actuales">
-                                <h3>Circuito</h3>
-                        </a>
-                        <img src="assets/img/monaco-1.png" width="80%" alt="IMG" />
-
-                    </div>
-
-                    <div class="dest__link">
-
-                        <a href="pages/historia.html#cambios">
-                                <h3>Cambio</h3>
-                        </a>
-                        <img src="assets/img/drs.png" width="80%" alt="IMG" />
-
-                    </div>
-
-                    <div class="dest__link">
-
-                        <a href="pages/historia.html#innovaciones">
-                                <h3>Innovación</h3>
-                        </a>
-                        <img src="assets/img/lotus.png" width="80%" alt="IMG" />
-
-                    </div>
-
                 </section>
                 <!--Sección de Historia con resumen.-->
                 <div class="historia__titulo">
@@ -121,41 +137,34 @@
                     </div>
 
                 </section>
-                <!--Sección con una imágen, un pequeño resumen y enlaces a las páginas de Equipos, Pilotos y Circuitos.-->
-                <section class="otras__secciones">
-
-                    <div class="otras__secc__equipo">
-
-                        <a href="pages/equipo.html">
-                            <h2>Equipos Destacados</h2>
-                        </a>
-                        <p>Equipos destacados por sus logros, campeonatos e innovaciones durante su trayectoria.</p>
-
+                <section>
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="assets/img/ferrari-logo.png" class="card-img-top w-100" alt="img">
+                            <div class="card-body otras__secc__equipo">
+                                <a href="pages/equipo.html"><h5 class="card-title">Equipos Destacados</h5></a>
+                                <p class="card-text">Equipos destacados por sus logros, campeonatos e innovaciones durante su trayectoria.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/schumacher.png" class="card-img-top" alt="img">
+                            <div class="card-body otras__secc__piloto">
+                                <a href="pages/pilotos.html"><h5 class="card-title">Pilotos Destacados</h5></a>
+                                <p class="card-text">Pilotos destacados por sus logros, campeonatos e influencia en el deporte durante su trayectoria.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/brasil-1.png" class="card-img-top" alt="img">
+                            <div class="card-body otras__secc__circuito">
+                                <a href="pages/circuito.html"><h5 class="card-title">Circuitos Destacados</h5></a>
+                                <p class="card-text">Circuitos destacados por su historia y momentos importantes en el deporte.</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="otras__secc__piloto">
-
-                        <a href="pages/pilotos.html">
-                            <h2>Pilotos Destacados</h2>
-                        </a>
-                        <p>Pilotos destacados por sus logros, campeonatos e influencia en el deporte durante su trayectoria.</p>
-
-                    </div>
-
-                    <div class="otras__secc__circuito">
-
-                        <a href="pages/circuito.html">
-                            <h2>Circuitos Destacados</h2>
-                        </a>
-                        <p>Circuitos destacados por su historia y momentos importantes en el deporte.</p>
-
-                    </div>
-
                 </section>
-    
             </main>
             <!--Cierre de la sección principal.-->
-            <!--Comienzo del Footer.-->
+                <!--Comienzo del Footer.-->
             <footer>
 
                 <div class="pie">
@@ -222,6 +231,7 @@
             </footer>
             <!--Cierre del Footer.-->
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 
 </html>
