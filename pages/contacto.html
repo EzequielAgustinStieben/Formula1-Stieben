@@ -18,7 +18,7 @@
         <header>
             
                 <!--Barra de navegación entre Páginas en una lista desordenada.-->
-                <nav class="cab__nav navbar navbar-expand-lg bg-light">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-end bg-light">
                     <div class="container-fluid">
                         
                         <!--Logo con enlace a la Página de inicio.-->
@@ -27,13 +27,13 @@
                         </a>
                         
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse cab__nav navbar-collapse" id="navbarNav">
                             
-                            <ul class="cab__nav__list navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav">
 
                                 <li class="cab__nav__link nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                                 <li class="cab__nav__link nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
@@ -64,22 +64,22 @@
                         <div class="container-fluid formulario w-50">
                             <div class="logo__form">
                                 <a href="../index.html">
-                                    <img src="../assets/img/f1-10.png" height="20%" width="20%" alt="Logo">
+                                    <img src="../assets/img/f1-10.png" alt="Logo">
                                 </a>
                             </div>
                         
                             <div>
                                 <legend>Contáctanos</legend>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 contenedor__nombre">
                                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 contenedor__email">
                                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 contenedor__mensaje">
                                 <label for="exampleFormControlTextarea1" class="form-label">Deja un mensaje</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
