@@ -20,7 +20,7 @@
             <header>
                 
                 <!--Barra de navegación entre Páginas en una lista desordenada.-->
-                <nav class="cab__nav navbar navbar-expand-lg bg-light">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-end bg-light">
                     <div class="container-fluid">
                         
                         <!--Logo con enlace a la Página de inicio.-->
@@ -29,13 +29,13 @@
                         </a>
                         
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse cab__nav navbar-collapse" id="navbarNav">
                             
-                            <ul class="cab__nav__list navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav">
 
                                 <li class="cab__nav__link nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
                                 <li class="cab__nav__link nav-item"><a class="nav-link" href="pages/historia.html">Historia</a></li>
@@ -60,7 +60,7 @@
 
                 <h2 class="dest__titulo">Destacados</h2>
                 
-                <section class="d-flex justify-content-center">
+                <section>
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,43 +71,43 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="pages/pilotos.html#1950-1969"><img src="assets/img/fangio.png" class="d-block w-100" alt="img"></a>
+                                <a href="pages/pilotos.html#1950-1969"><img src="assets/img/fangio1.png" class="d-block w-100" alt="img"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Piloto</h5>
+                                    <h5 class="carrusel-letras">Fangio</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <a href="pages/equipo.html#2010-2022"><img src="assets/img/mercedes-logo.png" class="d-block w-100" alt="img"></a>
+                                <a href="pages/equipo.html#2010-2022"><img src="assets/img/mercedes-logo1.png" class="d-block w-100" alt="img"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Equipo</h5>
+                                    <h5 class="carrusel-letras">Mercedes</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <a href="pages/circuito.html#actuales"><img src="assets/img/monaco-1.png" class="d-block w-100" alt="img"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Circuito</h5>
+                                    <h5 class="carrusel-letras">Mónaco</h5>
                                 </div>
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                                 <a href="pages/historia.html#cambios"><img src="assets/img/drs.png" class="d-block w-100" alt="img"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Cambios</h5>
+                                    <h5 class="carrusel-letras">Drag Reduction System</h5>
                                 </div>
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                                 <a href="pages/historia.html#innovaciones"><img src="assets/img/lotus.png" class="d-block w-100" alt="img"></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Innovaciones</h5>
+                                    <h5 class="carrusel-letras">Efecto suelo</h5>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </section>
@@ -124,20 +124,20 @@
 
                     <div>
 
-                        <img src="assets/img/before-formula-1.png" width="30%" alt="IMG"/>
-                        <p>Las carreras de Gran Premio tienen sus raíces en las carreras automovilísticas surgidas en Francia en 1894. En un principio se trataba de eventos individuales, sin conexión y en caminos de tierra, prácticamente sin ninguna limitación. Antes de la Segunda Guerra Mundial se habían establecido las reglas para las competiciones de Grand Prix, que debían obedecer tanto autos como pilotos. Estas reglas, conocidas en su conjunto como Fórmula, no se concretaron hasta que en 1947 la antigua AIACR se reorganizó, pasándose a llamar la Federación Internacional del Automóvil, conocida por las siglas "FIA".</p>
+                        <img src="assets/img/before-formula-1.png" class="col-lg-4" alt="IMG"/>
+                        <p class="col-lg-8">Las carreras de Gran Premio tienen sus raíces en las carreras automovilísticas surgidas en Francia en 1894. En un principio se trataba de eventos individuales, sin conexión y en caminos de tierra, prácticamente sin ninguna limitación. Antes de la Segunda Guerra Mundial se habían establecido las reglas para las competiciones de Grand Prix, que debían obedecer tanto autos como pilotos. Estas reglas, conocidas en su conjunto como Fórmula, no se concretaron hasta que en 1947 la antigua AIACR se reorganizó, pasándose a llamar la Federación Internacional del Automóvil, conocida por las siglas "FIA".</p>
 
                     </div>
 
                     <div>   
 
-                        <p>Con sede central en París, al final de la temporada de 1949 anunció que para 1950 unirían varios Grandes Premios nacionales para crear un Campeonato Mundial de Pilotos, por lo que en 1950 se celebró el primer campeonato de Fórmula 1. El primer Gran Premio se realizó el 13 de mayo de 1950 en el circuito de Silverstone y fue ganado por el italiano Giuseppe Farina, consiguiendo además el campeonato de 1950 tras vencer a su compañero de equipo, el argentino Juan Manuel Fangio.</p>
-                        <img src="assets/img/1950.png" width="30%" alt="IMG"/>
+                        <p class="col-lg-8">Con sede central en París, al final de la temporada de 1949 anunció que para 1950 unirían varios Grandes Premios nacionales para crear un Campeonato Mundial de Pilotos, por lo que en 1950 se celebró el primer campeonato de Fórmula 1. El primer Gran Premio se realizó el 13 de mayo de 1950 en el circuito de Silverstone y fue ganado por el italiano Giuseppe Farina, consiguiendo además el campeonato de 1950 tras vencer a su compañero de equipo, el argentino Juan Manuel Fangio.</p>
+                        <img src="assets/img/1950.png" class="col-lg-4" alt="IMG"/>
 
                     </div>
 
                 </section>
-                <section>
+                <section class="otras__secciones">
                     <div class="card-group">
                         <div class="card">
                             <img src="assets/img/ferrari-logo.png" class="card-img-top w-100" alt="img">
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="assets/img/brasil-1.png" class="card-img-top" alt="img">
+                            <img src="assets/img/brasil.png" class="card-img-top" alt="img">
                             <div class="card-body otras__secc__circuito">
                                 <a href="pages/circuito.html"><h5 class="card-title">Circuitos Destacados</h5></a>
                                 <p class="card-text">Circuitos destacados por su historia y momentos importantes en el deporte.</p>

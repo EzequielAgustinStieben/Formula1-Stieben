@@ -40,20 +40,8 @@ header{
 
 .cab__nav{
 
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.cab__nav__list{
-
-    width: 60%;
-    display: flex;
-    flex-flow: wrap;
-    list-style: none;
-    justify-content: space-evenly;
+    justify-content: end;
 
 }
 
@@ -87,31 +75,11 @@ main{
 
 }
 
-.destacado{
+.carrusel-letras{
 
-    background-color: rgb(200, 200, 200);
-    font-size: 200%;
-    width: 100%; 
-    padding: 1%;
-    display: flex; 
-    align-items: baseline;
-    justify-content: space-evenly;
-
-}
-
-.dest__link{
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.dest__link a{
-
-    text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-size: 350%;
+    text-shadow: 2px 2px 3px #000000;
 
 }
 
@@ -133,6 +101,7 @@ main{
 .historia__titulo a h1{
 
     color: black;
+    font-size: 150%;
    
 }
 
@@ -152,6 +121,7 @@ main{
 .historia div{
 
     display: flex;
+    flex-direction: row;
     text-align: center;
     align-items: center;
     padding: 1%;
@@ -162,14 +132,9 @@ main{
 
     display: flex; 
     align-items: center;
-    font-size: 150%;
-    width: 100%;
+    text-align: center;
+    font-size: 170%;
 
-}
-
-.otras__secc__circuito , .otras__secc__equipo , .otras__secc__piloto{
-    background-color: rgb(226, 226, 226);
-    font-size: 150%;
 }
 
 .otras__secc__equipo a , .otras__secc__piloto a , .otras__secc__circuito a{
@@ -297,6 +262,24 @@ footer{
 
 }
 
+/*CSS de Contacto*/
+
+.logo__form a img{
+    width: 50%;
+}
+
+legend{
+
+    text-align: center;
+
+}
+
+legend , .contenedor__nombre , .contenedor__email , .contenedor__mensaje{
+
+    margin-top: 5%;
+    font-size: 150%;
+}
+
 fieldset{
 
     display: flex;
@@ -306,12 +289,12 @@ fieldset{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 120vh;
 
 }
 
 .formulario{
-    height: 75vh;
+    height: 100vh;
     background-color: rgba(223, 223, 223, 0.678);
 }
 
@@ -320,76 +303,79 @@ fieldset{
     margin-top: 2.5%;
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 991px){
 
-    main{
+    .cab__nav{
 
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         
-    }
-
-    .destacado .dest__link img{
-
-        width: 35%;
-
-    }
-
-    .cab__nav__link{
-
-        font-size: 110%;
-    
     }
 
     .dest__titulo{
 
-        font-size: 160%;
+        font-size: 200%;
 
     }
 
-    .dest__link{
+    .historia , .historia__titulo , .historia div{
 
-        font-size: 60%;
+        font-size: 130%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        width: 100%;
 
-    }
-
-    .historia__titulo{
-
-        font-size: 105%;
-        
-    }
-
-    .historia{
-
-        font-size: 115%;
-        
     }
 
     .historia div img{
 
-        width: 40%;
+        width: 50%;
 
     }
 
-    .destacado , .historia , .historia__titulo , .historia div{
+}
 
+@media screen and (max-width: 768px){
+
+    .dest__titulo{
+
+        font-size: 200%;
+
+    }
+
+    .historia , .historia__titulo , .historia div{
+
+        font-size: 120%;
         display: flex;
         flex-direction: column;
         flex-flow: wrap;
         align-items: center;
-        justify-content: space-around;
 
     }
 
-    .otras__secciones{
+}
+
+@media screen and (max-width: 600px){
+
+    legend , .contenedor__nombre , .contenedor__email , .contenedor__mensaje{
 
         font-size: 120%;
-        flex-flow: wrap;
-        
+
     }
 
-    .otras__secc__circuito{
-        height: initial;
+    fieldset{
+
+        height: 100vh;
+
+    }
+
+    .formulario{
+
+        height: 80vh;
+
     }
 
 }
@@ -436,27 +422,15 @@ fieldset{
 
     }
 
-    .dest__link{
-
-        font-size: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-
     .historia__titulo{
 
         font-size: 120%;
         
     }
 
-    .historia{
-
-        font-size: 130%;
-        
-    }
-
     .destacado , .historia , .historia__titulo , .historia div{
 
+        font-size: 130%;
         display: flex;
         flex-direction: column;
         flex-flow: wrap;
