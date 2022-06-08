@@ -1,3 +1,29 @@
-$rojo-claro: rgb(255, 60, 60);
-$gris-claro: rgb(210, 210, 210);
 $text-shadow-card:2px 2px 8px #000000;
+
+/*maps*/
+
+$bg-color:(
+    rojo-claro: rgb(255, 60, 60),
+    gris-claro: rgb(210, 210, 210)
+);
+
+$t-fuente:(
+    50: 50%,
+    100: 100%,
+    200: 200%,
+    500: 500%
+);
+
+$width:(
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%
+);
+
+$height:(
+    25: 25vh,
+    50: 50vh,
+    75: 75vh,
+    100: 100vh
+);

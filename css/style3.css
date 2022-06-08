@@ -1,3 +1,4 @@
+/*maps*/
 * {
   margin: 0px;
   padding: 0px;
@@ -56,15 +57,17 @@ html {
 
 .otras__secciones {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   text-align: center;
+  align-items: center;
   font-size: 170%; }
 
 .card {
   background-color: #d2d2d2; }
 
-.otras__secc__equipo a {
+.otras__secc__equipo .titulo__card {
   display: flex;
+  flex-direction: row;
   text-align: center;
   align-items: center;
   flex-direction: column;
@@ -73,21 +76,13 @@ html {
   text-shadow: 2px 2px 8px #000000;
   width: 100%; }
 
-.otras__secc__piloto a {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
+.otras__secc__piloto .titulo__card {
   text-decoration: none;
   color: black;
   text-shadow: 2px 2px 8px #000000;
   width: 100%; }
 
-.otras__secc__circuito a {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
+.otras__secc__circuito .titulo__card {
   text-decoration: none;
   color: black;
   text-shadow: 2px 2px 8px #000000;
@@ -95,10 +90,12 @@ html {
 
 .pie {
   display: flex;
+  flex-direction: row;
+  text-align: center;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: 1% 1% 1% 0%; }
+  margin-top: 1%; }
   .pie .pie__info {
     font-size: 130%;
     display: flex;
@@ -114,8 +111,9 @@ html {
 .pie__logo {
   width: 100%;
   display: flex;
-  align-items: center;
-  text-align: center; }
+  flex-direction: row;
+  text-align: center;
+  align-items: center; }
 
 @media screen and (max-width: 991px) {
   .cab__nav {

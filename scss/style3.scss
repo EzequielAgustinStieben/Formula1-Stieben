@@ -1,4 +1,5 @@
 @import "utilidades/variables";
+@import "utilidades/mixins";
 @import "utilidades/general";
 /*css de incio*/
 .cab__logo {
@@ -9,63 +10,56 @@
 	justify-content: end;
 }
 .cab__nav__link {
-    font-size: 150%;
+    font-size:map-get($t-fuente, 100)+50;
     a {
         text-decoration: none;
     }
 }
 .dest__titulo {
 	text-align: center;
-	background-color: $gris-claro;
+	background-color:map-get($bg-color, gris-claro);
 	width: 100%;
-	font-size: 300%;
+	font-size:map-get($t-fuente, 200)+100;
 	padding: 1%;
 }
 .carrusel-letras {
 	color: rgb(255, 255, 255);
-	font-size: 350%;
+	font-size:map-get($t-fuente, 200)+150;
 	text-shadow: 2px 2px 3px #000000;
 }
 .historia__titulo {
-	font-size: 250%;
+	font-size:map-get($t-fuente, 200)+50;
 	display: flex;
 	justify-content: center;
 	margin: 1% 0% 0% 0%;
-	background-color: $rojo-claro;
+	background-color:map-get($bg-color, rojo-claro);
 	a {
 		text-decoration: none;
 		h1 {
 			color: black;
-			font-size: 150%;
+			font-size:map-get($t-fuente, 100)+50;
 		}
 	}
 }
 .historia {
-	background-color: $rojo-claro;
-	font-size: 200%;
+	background-color:map-get($bg-color, rojo-claro);
+	font-size:map-get($t-fuente, 200);
 	margin: 0% 0% 1% 0%;
 	div {
-		display: flex;
-		flex-direction: row;
-		text-align: center;
-		align-items: center;
+		@include flex-row-tA__center-aI__center;
 		padding: 1%;
 	}
 }
 .otras__secciones {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	font-size: 170%;
+	@include flex-row-tA__center-aI__center;
+	font-size:map-get($t-fuente, 200)-30;
 }
 .card{
-    background-color:$gris-claro;
+    background-color:map-get($bg-color, gris-claro);
 }
 .otras__secc__equipo {
-    a {
-        display: flex;
-        text-align: center;
-        align-items: center;
+    .titulo__card {
+        @include flex-row-tA__center-aI__center;
         flex-direction: column;
         text-decoration: none;
         color: rgb(0, 0, 0);
@@ -74,41 +68,34 @@
     }
 }
 .otras__secc__piloto {
-    a {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
+    .titulo__card {
+        @extend .titulo__card;
+		text-decoration: none;
+		color: rgb(0, 0, 0);
         text-shadow: $text-shadow-card;
         width: 100%;
     }
 }
 .otras__secc__circuito {
-    a {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
+    .titulo__card {
+        @extend .titulo__card;
+		text-decoration: none;
+		color: rgb(0, 0, 0);
         text-shadow: $text-shadow-card;
         width: 100%;
     }
 }
 .pie {
-	display: flex;
-	align-items: center;
+	@include flex-row-tA__center-aI__center;
 	justify-content: space-between;
 	width: 100%;
-	margin: 1% 1% 1% 0%;
+	margin-top: 1%;
     .pie__info {
-        font-size: 130%;
+        font-size:map-get($t-fuente, 100)+30;
         display: flex;
         flex-direction: column;
         a {
-            font-size: 140%;
+            font-size:map-get($t-fuente, 100)+40;
             text-decoration: none;
             color: black;
             font-weight: bolder;
@@ -120,9 +107,7 @@
 }
 .pie__logo {
 	width: 100%;
-	display: flex;
-	align-items: center;
-	text-align: center;
+	@include flex-row-tA__center-aI__center;
 }
 @media screen and (max-width: 991px) {
 	.cab__nav {
@@ -131,17 +116,17 @@
 		text-align: center;
 	}
 	.dest__titulo {
-		font-size: 200%;
+		font-size:map-get($t-fuente, 200);
 	}
 	.historia {
-		font-size: 130%;
+		font-size:map-get($t-fuente, 100)+30;
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
 		justify-content: center;
 		width: 100%;
 		div {
-			font-size: 130%;
+			font-size:map-get($t-fuente, 100)+30;
 			display: flex;
 			flex-direction: column;
 			flex-flow: wrap;
@@ -153,7 +138,7 @@
 		}
 	}
 	.historia__titulo {
-		font-size: 130%;
+		font-size:map-get($t-fuente, 100)+30;
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
@@ -163,16 +148,16 @@
 }
 @media screen and (max-width: 768px) {
 	.dest__titulo {
-		font-size: 200%;
+		font-size:map-get($t-fuente, 200);
 	}
 	.historia {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
 		align-items: center;
 		div {
-			font-size: 120%;
+			font-size:map-get($t-fuente, 100)+20;
 			display: flex;
 			flex-direction: column;
 			flex-flow: wrap;
@@ -180,7 +165,7 @@
 		}
 	}
 	.historia__titulo {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
@@ -189,16 +174,16 @@
 }
 @media screen and (max-width: 600px) {
 	legend {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 	}
 	.contenedor__nombre {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 	}
 	.contenedor__email {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 	}
 	.contenedor__mensaje {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 	}
 	fieldset {
 		height: 100vh;
@@ -212,11 +197,11 @@
 		display: flex;
 		flex-direction: column;
         .dest__titulo {
-            font-size: 150%;
+            font-size:map-get($t-fuente, 100)+50;
         }
         .historia__titulo {
-            font-size: 120%;
-            font-size: 130%;
+            font-size:map-get($t-fuente, 100)+20;
+            font-size:map-get($t-fuente, 100)+30;
             display: flex;
             flex-direction: column;
             flex-flow: wrap;
@@ -224,14 +209,14 @@
             justify-content: space-around;
         }
         .historia {
-            font-size: 130%;
+            font-size:map-get($t-fuente, 100)+30;
             display: flex;
             flex-direction: column;
             flex-flow: wrap;
             align-items: center;
             justify-content: space-around;
             div {
-                font-size: 130%;
+                font-size:map-get($t-fuente, 100)+30;
                 display: flex;
                 flex-direction: column;
                 flex-flow: wrap;
@@ -243,7 +228,7 @@
             }
         }
         .otras__secciones {
-            font-size: 130%;
+            font-size:map-get($t-fuente, 100)+30;
             flex-flow: wrap;
         }
 	}
@@ -259,7 +244,7 @@
 		justify-content: space-around;
 	}
 	.cab__nav__link {
-		font-size: 120%;
+		font-size:map-get($t-fuente, 100)+20;
 	}
 	.destacado {
 		.dest__link {
@@ -267,7 +252,7 @@
 				width: 30%;
 			}
 		}
-		font-size: 130%;
+		font-size:map-get($t-fuente, 100)+30;
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
@@ -290,7 +275,7 @@
 		justify-content: center;
 	}
 	.pie__info {
-		font-size: 100%;
+		font-size:map-get($t-fuente, 100);
 	}
 	.pie__redes {
 		div {
@@ -304,19 +289,19 @@
 	.galeria__titulo {
 		height: 25vh;
 		h1 {
-			font-size: 350%;
+			font-size:map-get($t-fuente, 500)-150;
 		}
 	}
 	.titulo__monoplazas {
-		font-size: 175%;
+		font-size:map-get($t-fuente, 200)-25;
 		height: 5vh;
 	}
 	.titulo__pilotos {
-		font-size: 175%;
+		font-size:map-get($t-fuente, 200)-25;
 		height: 5vh;
 	}
 	.titulo__circuitos {
-		font-size: 175%;
+		font-size:map-get($t-fuente, 200)-25;
 		height: 5vh;
 	}
 	.img__autos {
