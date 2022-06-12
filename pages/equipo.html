@@ -6,162 +6,255 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formula 1</title>
+        <meta name="description" content="Página sobre varios equipos que se destacaron en la formula 1 desde los comienzos hasta la actualidad.">
+        <meta name="keytwords" content="Formual 1, Fangio, ferrari, Senna, williams, schumacher, mercedes, alain prost, mclaren, hamilton, Carreras, Autos de carreras">
+        <title>Equipos Destacados</title>
         <link rel="shortcut icon" href="../favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style3.css">
     
     </head>
     
     <body>
         <!--Comienzo del encabezado.-->
-        <header>
-            <!--Logo con enlace a la Página de inicio-->
-            <a href="../index.html">
-                <img src="../assets/img/f1-10.png" height="10%" width="10%" alt="Logo"/>
-            </a>
-            <!--Barra de navegación entre Páginas en una lista desordenada.-->
-            <nav>
-                
-                <ul>
-
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="equipo.html">Equipos Destacados</a></li>
-                    <li><a href="pilotos.html">Pilotos Destacados</a></li>
-                    <li><a href="circuito.html">Circuitos Destacados</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-
-                </ul>
             
+        <header>
+                
+            <!--Barra de navegación entre Páginas en una lista desordenada.-->
+            <nav class="navbar navbar-expand-lg d-flex justify-content-end bg-light">
+                <div class="container-fluid">
+                    
+                    <!--Logo con enlace a la Página de inicio.-->
+                    <a href="../index.html">
+                        <img src="../assets/img/f1-10.png" alt="Logo formula 1" class="cab__logo"/>
+                    </a>
+
+                    <button class="navbar-toggler w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse cab__nav navbar-collapse" id="navbarNav">
+                        
+                        <ul class="navbar-nav">
+
+                            <li class="cab__nav__link nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="cab__nav__link nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                            <li class="cab__nav__link nav-item "><a class="nav-link active" aria-current="page" href="equipo.html">Equipos Destacados</a></li>
+                            <li class="cab__nav__link nav-item "><a class="nav-link" href="pilotos.html">Pilotos Destacados</a></li>
+                            <li class="cab__nav__link nav-item "><a class="nav-link" href="circuito.html">Circuitos Destacados</a></li>
+                            <li class="cab__nav__link nav-item "><a class="nav-link" href="galeria.html">Galería</a></li>
+                            <li class="cab__nav__link nav-item "><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                        </ul>     
+
+                    </div>
+
+                </div>
+
             </nav>
-    
+        
         </header>
         <!--Cierre de encabezado.-->
-        <hr>
         <!--Comienzo de la sección principal con información e imágenes sobre los Equipos Destacados.-->
         <main>
 
             <section>
 
-                <img src="../assets/img/mclaren-logo.png" width="20%" alt="IMG">
-                <h1>Equipos Destacados</h1>
+                <div class="equipo__titulo">
+                    <h1>Equipos Destacados</h2>
+                </div>
 
             </section>
-            <hr>
-            <!--Barra de navegación interna con enlaces a las distintas épocas.-->
-            <nav>
 
-                <a href="#1950-1969">1950-1969</a>
-                <a href="#1970-1989">1970-1989</a>
-                <a href="#1990-2009">1990-2009</a>
-                <a href="#2010-2022">2010-2022</a>
-            
-            </nav>
-            <hr>
+            <!--Barra de navegación interna con enlaces a las distintas épocas.-->
+            <div class="contenedor__nav__equipo">
+
+                <nav class="nav__equipo">
+
+                    <div class="titulo__nav__equipo">
+                        <a href="#1950-1969">1950-1969</a>
+                    </div>
+                    <div class="titulo__nav__equipo">
+                        <a href="#1970-1989">1970-1989</a>
+                    </div>
+                    <div class="titulo__nav__equipo">
+                        <a href="#1990-2009">1990-2009</a>
+                    </div>
+                    <div class="titulo__nav__equipo">
+                        <a href="#2010-2022">2010-2022</a>
+                    </div>
+                
+                </nav>
+
+            </div>
+
             <section id="1950-1969">
 
-                <h2>1950-1969</h2>
-                
-                <h3>Lorem</h3>
-                <img src="../assets/img/ferrari-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="titulo__seccion__equipo">
+                    <h2>1950-1969</h2>
+                </div>
 
-                <h3>Lorem</h3>
-                <img src="../assets/img/ferrari-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="seccion__equipo">
+                    <img src="../assets/img/ferrari-logo.png" width="30%" alt="ferrari logo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                </div>
+
+                <div class="seccion__equipo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                    <img src="../assets/img/ferrari-logo.png" width="30%" alt="ferrari logo">
+                </div>
 
             </section>
 
-            <hr>
+
 
             <section id="1970-1989">
                 
-                <h2>1970-1989</h2>
-                
-                <h3>Lorem</h3>
-                <img src="../assets/img/williams-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="titulo__seccion__equipo">
+                    <h2>1970-1989</h2>
+                </div>
 
-                <h3>Lorem</h3>
-                <img src="../assets/img/williams-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="seccion__equipo">
+                    <img src="../assets/img/williams-logo.png" width="30%" alt="williams logo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                </div>
+
+                <div class="seccion__equipo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                    <img src="../assets/img/williams-logo.png" width="30%" alt="williams logo">
+                </div>
 
             </section>
-
-            <hr>
 
             <section id="1990-2009">
                 
-                <h2>1990-2009</h2>
-                
-                <h3>Lorem</h3>
-                <img src="../assets/img/mclaren-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="titulo__seccion__equipo">
+                    <h2>1990-2009</h2>
+                </div>
 
-                <h3>Lorem</h3>
-                <img src="../assets/img/mclaren-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="seccion__equipo">
+                    <img src="../assets/img/mclaren-logo.png" width="30%" alt="mclaren logo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                </div>
+
+                <div class="seccion__equipo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                    <img src="../assets/img/mclaren-logo.png" width="30%" alt="mclaren logo">
+                </div>
 
             </section>
 
-            <hr>
-
             <section id="2010-2022">
                 
-                <h2>2010-2022</h2>
-               
-                <h3>Lorem</h3>
-                <img src="../assets/img/mercedes-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="titulo__seccion__equipo">
+                    <h2>2010-2022</h2>
+                </div>
 
-                <h3>Lorem</h3>
-                <img src="../assets/img/mercedes-logo.png" width="20%" alt="IMG">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <div class="seccion__equipo">
+                    <img src="../assets/img/alfa-romeo-logo.png" width="30%" alt="alfa romeo logo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                </div>
+
+                <div class="seccion__equipo">
+                    <div>
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                    </div>
+                    <img src="../assets/img/alfa-romeo-logo.png" width="30%" alt="alfa romeo logo">
+                </div>
 
             </section>
 
         </main>
         <!--Cierre de la sección principal.-->
-        <hr>
         <!--Comienzo del Footer.-->
         <footer>
 
-            <!--Información personal y enlace de Contacto.-->
-            <div>
-                <a href="contacto.html"><p>Contacto</p>
-                </a>
-                <p>Email: ezequielstieben999@gmail<br>N°ro de teléfono: 1167175906<br>Provincia de Buenos Aire, Argentina.</p>
-            </div>
-            <!--Enlaces a mis Redes.-->
-            <div>
-                <a href="https://www.facebook.com/ezequiel.stieben/">
-                    <img src="../assets/img/facebook.png" height="5%" width="5%" alt="Logo"/>
-                </a>
-                <a href="https://www.instagram.com/ezequielstieben/">
-                    <img src="../assets/img/instagram.png" height="5%" width="5%" alt="Logo"/>
-                </a>
-                <a href="https://twitter.com/EzequielStieben">
-                    <img src="../assets/img/twitter.png" height="5%" width="5%" alt="Logo"/>
-                </a>
+            <div class="pie">
+                <!--Información personal y enlace de Contacto.-->
+                <div class="pie__info">
+
+                    <a href="contacto.html">
+                        <p>Contacto</p>
+                    </a>
+                    <p>Email: ezequielstieben999@gmail.com</p>
+                    <p>N°ro de teléfono: 1167175906</p>
+                    <p>Provincia de Buenos Aire, Argentina.</p>
+
+                </div>
+                <!--Enlaces a mis Redes.-->
+                <div class="pie__redes">
+
+                    <div>
+                        <a href="https://www.facebook.com/ezequiel.stieben/">
+                            <img src="../assets/img/facebook.png" width="15%" alt="Logo facebook"/>
+                        </a>
+                    </div>
+
+                    <div>
+                    <a href="https://www.instagram.com/ezequielstieben/">
+                        <img src="../assets/img/instagram.png" width="15%" alt="Logo instagram"/>
+                    </a>
+                    </div>
+
+                    <div>
+                        <a href="https://twitter.com/EzequielStieben">
+                            <img src="../assets/img/twitter.png" width="15%" alt="Logo twitter"/>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
             <!--Los 4 Logos principales que usó la Formula 1 desde su creación, con enlace a la Página de Inicio.-->
-            <div>
-                <a href="../index.html">
-                    <img src="../assets/img/f1-logo-1.png" height="15%" width="15%" alt="Logo"/>
-                </a>
-                <a href="../index.html">
-                    <img src="../assets/img/f1-logo-2.png" height="15%" width="15%" alt="Logo"/>
-                </a>
-                <a href="../index.html">
-                    <img src="../assets/img/f1-logo-3.png" height="15%" width="15%" alt="Logo"/>
-                </a>
-                <a href="../index.html">
-                    <img src="../assets/img/f1-10.png" height="15%" width="15%" alt="Logo"/>
-                </a>
+            <div class="pie__logo">
+
+                <div>
+                    <a href="../index.html">
+                        <img src="../assets/img/f1-logo-1.png" width="100%" alt="primer logo formula 1"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="../index.html">
+                        <img src="../assets/img/f1-logo-2.png"  width="40%" alt="segundo logo formula 1"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="../index.html">
+                        <img src="../assets/img/f1-logo-3.png" width="40%" alt="tercer logo formula 1"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="../index.html">
+                        <img src="../assets/img/f1-10.png" width="100%" alt="cuarto logo formula 1"/>
+                    </a>
+                </div>
             </div>
 
         </footer>
         <!--Cierre del Footer.-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
     
 </html>
