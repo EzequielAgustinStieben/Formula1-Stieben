@@ -4,3 +4,16 @@
 	text-align: center;
 	align-items: center;
 }
+@mixin bg-section {
+	background-position: center center;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+@mixin title-section {
+	text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+	color: white;
+	font-size: 600%;
+}

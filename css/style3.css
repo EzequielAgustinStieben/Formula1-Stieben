@@ -126,9 +126,9 @@ html {
 
 .contenedor__nav__historia {
   background-color: #2c2c2c; }
-  .contenedor__nav__historia .nav__historia {
+  .contenedor__nav__historia .nav__pag {
     display: flex; }
-    .contenedor__nav__historia .nav__historia .titulo__nav__historia {
+    .contenedor__nav__historia .nav__pag .titulo__nav__pag {
       width: 100%;
       display: flex;
       align-items: center;
@@ -137,11 +137,11 @@ html {
       height: 7vh;
       font-size: 200%;
       margin: 1%; }
-      .contenedor__nav__historia .nav__historia .titulo__nav__historia a {
+      .contenedor__nav__historia .nav__pag .titulo__nav__pag a {
         text-decoration: none;
         color: #000000; }
 
-.titulo__seccion__historia {
+.titulo__seccion__pag {
   width: 25%;
   display: flex;
   align-items: center;
@@ -149,23 +149,23 @@ html {
   background-color: #d2d2d2;
   height: 7vh;
   margin: 1%; }
-  .titulo__seccion__historia h2 {
+  .titulo__seccion__pag h2 {
     font-size: 200%; }
 
-.seccion__historia {
+.seccion__pag {
   display: flex; }
-  .seccion__historia div {
+  .seccion__pag div {
     display: flex;
     flex-direction: column;
     font-size: 200%; }
-    .seccion__historia div h3 {
+    .seccion__pag div h3 {
       text-align: center; }
 
 /*css equipos*/
 .equipo__titulo {
   background-image: url(../assets/img/equipos-logos.png);
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -177,20 +177,10 @@ html {
 
 .contenedor__nav__equipo {
   background-color: #2c2c2c; }
-  .contenedor__nav__equipo .nav__equipo {
-    display: flex; }
-    .contenedor__nav__equipo .nav__equipo .titulo__nav__equipo {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      background-color: #d2d2d2;
-      height: 7vh;
-      font-size: 200%;
-      margin: 1%; }
-      .contenedor__nav__equipo .nav__equipo .titulo__nav__equipo a {
-        text-decoration: none;
-        color: #000000; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
 
 .titulo__seccion__equipo {
   width: 25%;
@@ -216,11 +206,12 @@ html {
 .piloto__titulo {
   background-image: url(../assets/img/pilotos.png);
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-size: contain; }
   .piloto__titulo h1 {
     text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
     color: white;

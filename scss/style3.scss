@@ -120,9 +120,9 @@
 }
 .contenedor__nav__historia{
 	background-color: #2c2c2c;
-	.nav__historia{
+	.nav__pag{
 		display: flex;
-		.titulo__nav__historia{
+		.titulo__nav__pag{
 			width: 100%;
 			display: flex;
 			align-items: center;
@@ -138,7 +138,7 @@
 		}
 	}
 }
-.titulo__seccion__historia{
+.titulo__seccion__pag{
 	width: 25%;
 	display: flex;
 	align-items: center;
@@ -150,7 +150,7 @@
 		font-size: 200%;
 	}
 }
-.seccion__historia{
+.seccion__pag{
 	display: flex;
 	div{
 		display: flex;
@@ -164,37 +164,17 @@
 /*css equipos*/
 .equipo__titulo{
 	background-image: url(../assets/img/equipos-logos.png);
-	background-position: center center;
-	background-size: contain;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	@include bg-section;
 	h1 {
-		text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
-		color: white;
-		font-size: 600%;
+		@include title-section;
 	}
 }
 .contenedor__nav__equipo{
 	background-color: #2c2c2c;
-	.nav__equipo{
-		display: flex;
-		.titulo__nav__equipo{
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			background-color:map-get($bg-color, gris-claro);
-			height: 7vh;
-			font-size: 200%;
-			margin: 1%;
-			a{
-				text-decoration: none;
-				color: #000000;
-			}
-		}
-	}
+}
+a{
+	text-decoration: none;
+	color: #000000;
 }
 .titulo__seccion__equipo{
 	width: 25%;
@@ -222,16 +202,10 @@
 /*css pilotos*/
 .piloto__titulo{
 	background-image: url(../assets/img/pilotos.png);
-	background-position: center center;
+	@include bg-section;
 	background-size: contain;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
 	h1 {
-		text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
-		color: white;
-		font-size: 600%;
+		@include title-section;
 	}
 }
 .contenedor__nav__piloto{
@@ -280,16 +254,9 @@
 /*css circuitos*/
 .circuito__titulo{
 	background-image: url(../assets/img/brasil.png);
-	background-position: center center;
-	background-size: cover;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	@include bg-section;
 	h1 {
-		text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
-		color: white;
-		font-size: 600%;
+		@include title-section;
 	}
 }
 .contenedor__nav__circuito{
@@ -338,16 +305,9 @@
 /*css galeria*/
 .galeria__titulo {
 	background-image: url(../assets/img/cars-drivers.png);
-	background-position: center center;
-	background-size: cover;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	@include bg-section;
 	h1 {
-		text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
-		color: white;
-		font-size: 600%;
+		@include title-section;
 	}
 }
 .titulo__seccion__galeria{
