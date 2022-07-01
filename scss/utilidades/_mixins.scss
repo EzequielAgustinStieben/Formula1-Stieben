@@ -17,3 +17,28 @@
 	color: white;
 	font-size: 600%;
 }
+@mixin otras-secc {
+	background-position: center center;
+	background-size: cover;
+	margin: 0% 1% 0% 1%;
+	transition: transform 3s;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+	padding: 5%;
+}
+@mixin otras-secc-a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+}
+@mixin flex-col-wrap-jC__cent{
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	justify-content: center;
+}

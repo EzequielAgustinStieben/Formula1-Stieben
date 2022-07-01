@@ -27,12 +27,12 @@
 	font-size:map-get($t-fuente, 200)+150;
 	text-shadow: 2px 2px 3px #000000;
 }
-.historia__titulo {
+.historia__titulo , .historia__titulo__pag {
 	font-size:map-get($t-fuente, 200)+50;
 	display: flex;
 	justify-content: center;
-	margin: 1% 0% 0% 0%;
-	background-color:map-get($bg-color, rojo-claro);
+	margin: 1% 0% 1% 0%;
+	background-color:map-get($bg-color, gris-claro);
 	a {
 		text-decoration: none;
 		h1 {
@@ -48,42 +48,47 @@
 	div {
 		@include flex-row-tA__center-aI__center;
 		padding: 1%;
+		p {
+			padding: 1%;
+		}
 	}
 }
 .otras__secciones {
-	@include flex-row-tA__center-aI__center;
-	font-size:map-get($t-fuente, 200)-30;
-}
-.card{
-    background-color:map-get($bg-color, gris-claro);
+	display: flex;
+	align-items: center;
+	font-size: 150%;
+	background-color:map-get($bg-color, gris-claro);
+	padding: 1%;
 }
 .otras__secc__equipo {
-    .titulo__card {
-        @include flex-row-tA__center-aI__center;
-        flex-direction: column;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        text-shadow: $text-shadow-card;
-        width: 100%;
-    }
+	&:hover {
+		transform: translate(20%) scale(1.5);
+	}
+	background-image: url(../assets/img/ferrari-logo.png);
+	@include otras-secc;
+	a {
+		@include otras-secc-a;
+	}
 }
 .otras__secc__piloto {
-    .titulo__card {
-        @extend .titulo__card;
-		text-decoration: none;
-		color: rgb(0, 0, 0);
-        text-shadow: $text-shadow-card;
-        width: 100%;
-    }
+	&:hover {
+		transform: scale(1.5);
+	}
+	background-image: url(../assets/img/schumacher.png);
+	@include otras-secc;
+	a {
+		@include otras-secc-a;
+	}
 }
 .otras__secc__circuito {
-    .titulo__card {
-        @extend .titulo__card;
-		text-decoration: none;
-		color: rgb(0, 0, 0);
-        text-shadow: $text-shadow-card;
-        width: 100%;
-    }
+	&:hover {
+		transform: translateX(-20%) scale(1.5);
+	}
+	background-image: url(../assets/img/brasil.png);
+	@include otras-secc;
+	a {
+		@include otras-secc-a;
+	}
 }
 .pie {
 	@include flex-row-tA__center-aI__center;
@@ -100,6 +105,9 @@
             text-decoration: none;
             color: black;
             font-weight: bolder;
+			p {
+				text-align: center;
+			}
         }
     }
     .pie__redes {
@@ -110,7 +118,7 @@
 	width: 100%;
 	@include flex-row-tA__center-aI__center;
 }
-/*css historia*/
+/*css historia, equipo, piloto y circuito*/
 .historia__seccion{
 	display: flex;
 	flex-direction: column;
@@ -118,8 +126,9 @@
 	background-color:map-get($bg-color, rojo-claro);
 	font-size:map-get($t-fuente, 200);
 }
-.contenedor__nav__historia{
+.contenedor__nav__pag{
 	background-color: #2c2c2c;
+	margin: 1% 0% 1% 0%;
 	.nav__pag{
 		display: flex;
 		.titulo__nav__pag{
@@ -139,7 +148,7 @@
 	}
 }
 .titulo__seccion__pag{
-	width: 25%;
+	width: 20%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -152,10 +161,26 @@
 }
 .seccion__pag{
 	display: flex;
+	margin: 1%;
 	div{
 		display: flex;
 		flex-direction: column;
-		font-size: 200%;
+		font-size:map-get($t-fuente, 100)+50;
+		padding: 1%;
+		h3{
+			text-align: center;
+		}
+	}
+}
+.seccion__pag--end{
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 1%;
+	div{
+		display: flex;
+		flex-direction: column;
+		font-size:map-get($t-fuente, 100)+50;
+		padding: 1%;
 		h3{
 			text-align: center;
 		}
@@ -165,38 +190,9 @@
 .equipo__titulo{
 	background-image: url(../assets/img/equipos-logos.png);
 	@include bg-section;
+	background-size: contain;
 	h1 {
 		@include title-section;
-	}
-}
-.contenedor__nav__equipo{
-	background-color: #2c2c2c;
-}
-a{
-	text-decoration: none;
-	color: #000000;
-}
-.titulo__seccion__equipo{
-	width: 25%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color:map-get($bg-color, gris-claro);
-	height: 7vh;
-	margin: 1%;
-	h2{
-		font-size: 200%;
-	}
-}
-.seccion__equipo{
-	display: flex;
-	div{
-		display: flex;
-		flex-direction: column;
-		font-size: 200%;
-		h3{
-			text-align: center;
-		}
 	}
 }
 /*css pilotos*/
@@ -208,98 +204,12 @@ a{
 		@include title-section;
 	}
 }
-.contenedor__nav__piloto{
-	background-color: #2c2c2c;
-	.nav__piloto{
-		display: flex;
-		.titulo__nav__piloto{
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			background-color:map-get($bg-color, gris-claro);
-			height: 7vh;
-			font-size: 200%;
-			margin: 1%;
-			a{
-				text-decoration: none;
-				color: #000000;
-			}
-		}
-	}
-}
-.titulo__seccion__piloto{
-	width: 25%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color:map-get($bg-color, gris-claro);
-	height: 7vh;
-	margin: 1%;
-	h2{
-		font-size: 200%;
-	}
-}
-.seccion__piloto{
-	display: flex;
-	div{
-		display: flex;
-		flex-direction: column;
-		font-size: 200%;
-		h3{
-			text-align: center;
-		}
-	}
-}
 /*css circuitos*/
 .circuito__titulo{
 	background-image: url(../assets/img/brasil.png);
 	@include bg-section;
 	h1 {
 		@include title-section;
-	}
-}
-.contenedor__nav__circuito{
-	background-color: #2c2c2c;
-	.nav__circuito{
-		display: flex;
-		.titulo__nav__circuito{
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			background-color:map-get($bg-color, gris-claro);
-			height: 7vh;
-			font-size: 200%;
-			margin: 1%;
-			a{
-				text-decoration: none;
-				color: #000000;
-			}
-		}
-	}
-}
-.titulo__seccion__circuito{
-	width: 25%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color:map-get($bg-color, gris-claro);
-	height: 7vh;
-	margin: 1%;
-	h2{
-		font-size: 200%;
-	}
-}
-.seccion__circuito{
-	display: flex;
-	div{
-		display: flex;
-		flex-direction: column;
-		font-size: 200%;
-		h3{
-			text-align: center;
-		}
 	}
 }
 /*css galeria*/
@@ -322,6 +232,8 @@ a{
 .contenedor__galeria{
 	width: 100%;
 	display: flex;
+	flex-direction: row;
+	flex-flow: nowrap;
 	background-color:map-get($bg-color, rojo-claro);
 	div{
 		margin:1%;
@@ -369,7 +281,7 @@ legend {
 	margin-top: 5%;
 	font-size: 150%;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
 	.cab__nav {
 		display: flex;
 		justify-content: center;
@@ -378,74 +290,154 @@ legend {
 	.dest__titulo {
 		font-size:map-get($t-fuente, 200);
 	}
+	.historia__titulo {
+		font-size:map-get($t-fuente, 100)+30;
+		@include flex-col-wrap-jC__cent;
+	}
 	.historia {
 		font-size:map-get($t-fuente, 100)+30;
-		display: flex;
-		flex-direction: column;
-		flex-flow: wrap;
-		justify-content: center;
-		width: 100%;
+		@include flex-col-wrap-jC__cent;
 		div {
 			font-size:map-get($t-fuente, 100)+30;
-			display: flex;
-			flex-direction: column;
-			flex-flow: wrap;
-			justify-content: center;
-			width: 100%;
+			@include flex-col-wrap-jC__cent;
 			img {
 				width: 50%;
 			}
 		}
 	}
-	.historia__titulo {
-		font-size:map-get($t-fuente, 100)+30;
+	.otras__secciones {
+		font-size:map-get($t-fuente, 100)+50;
+		.otras__secc__circuito , .otras__secc__equipo , .otras__secc__piloto {
+			padding: 2%;
+		}
+	}
+	.contenedor__nav__pag{
+		
+		.nav__pag{
+			display: flex;
+			.titulo__nav__pag{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				background-color:map-get($bg-color, gris-claro);
+				height: 5vh;
+				font-size: map-get($t-fuente, 200);
+				margin: 1%;
+				a{
+					text-decoration: none;
+					color: #000000;
+				}
+			}
+		}
+	}
+	.titulo__seccion__pag{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color:map-get($bg-color, gris-claro);
+		height: 5vh;
+		margin: 1% 0% 1% 0%;
+		h2{
+			font-size: map-get($t-fuente, 200);
+		}
+	}
+	.seccion__pag{
 		display: flex;
 		flex-direction: column;
-		flex-flow: wrap;
-		justify-content: center;
-		width: 100%;
+		align-items: center;
+		margin: 1% 0% 1% 0%;
+		img{
+			width: 50%;
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			font-size: map-get($t-fuente, 200);
+			h3{
+				text-align: center;
+			}
+		}
+	}
+	.seccion__pag--end{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1% 0% 1% 0%;
+		div{
+			display: flex;
+			flex-direction: column;
+			font-size: map-get($t-fuente, 200);
+			h3{
+				text-align: center;
+			}
+		}
 	}
 }
 @media screen and (max-width: 768px) {
 	.dest__titulo {
 		font-size:map-get($t-fuente, 200);
 	}
+	.historia__titulo {
+		font-size:map-get($t-fuente, 100)+50;
+		display: flex;
+		flex-direction: column;
+		flex-flow: wrap;
+		align-items: center;
+	}
 	.historia {
-		font-size:map-get($t-fuente, 100)+20;
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
 		align-items: center;
 		div {
-			font-size:map-get($t-fuente, 100)+20;
+			font-size:map-get($t-fuente, 100)+50;
 			display: flex;
 			flex-direction: column;
 			flex-flow: wrap;
 			align-items: center;
 		}
 	}
-	.historia__titulo {
-		font-size:map-get($t-fuente, 100)+20;
-		display: flex;
-		flex-direction: column;
+	.otras__secciones {
+		font-size:map-get($t-fuente, 100)+30;
 		flex-flow: wrap;
-		align-items: center;
-	}
-	.contenedor__galeria{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		div{
+		.otras__secc__circuito {
+			height: 30vh;
 			width: 100%;
+			justify-content: center;
+			&:hover {
+				transform: translateX(0%) scale(1);
+			}
+			@include otras-secc;
+			transition: transform 0s;
+			margin: 1%;
+		}
+		.otras__secc__equipo {
+			height: 30vh;
+			width: 100%;
+			justify-content: center;
+			&:hover {
+				transform: translateX(0%) scale(1);
+			}
+			@include otras-secc;
+			transition: transform 0s;
+			margin: 1%;
+		}
+		.otras__secc__piloto {
+			height: 30vh;
+			width: 100%;
+			justify-content: center;
+			&:hover {
+				transform: scale(1);
+			}
+			@include otras-secc;
+			transition: transform 0s;
+			margin: 1%;
 		}
 	}
-	.contenedor__galeria{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		div{
-			width: 100%;
-		}
+	.titulo__seccion__galeria{
+		font-size:map-get($t-fuente, 200);
 	}
 	.contenedor__galeria{
 		display: flex;
@@ -453,10 +445,88 @@ legend {
 		flex-direction: column;
 		div{
 			width: 100%;
+			margin: 1% 0% 1% 0%;
 		}
 	}
 }
 @media screen and (max-width: 600px) {
+	.historia__titulo{
+		font-size:map-get($t-fuente, 100)+30;
+	}
+	.historia__titulo__pag{
+		h1{
+			font-size:map-get($t-fuente, 50)+20;
+		}
+	}
+	.historia{
+		font-size:map-get($t-fuente, 100);
+	}
+	.contenedor__nav__pag{
+		
+		.nav__pag{
+			display: flex;
+			.titulo__nav__pag{
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				background-color:map-get($bg-color, gris-claro);
+				height: 5vh;
+				font-size: map-get($t-fuente, 100)+30;
+				margin: 1%;
+				a{
+					text-decoration: none;
+					color: #000000;
+				}
+			}
+		}
+	}
+	.titulo__seccion__pag{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color:map-get($bg-color, gris-claro);
+		height: 5vh;
+		margin: 1% 0% 1% 0%;
+		h2{
+			font-size: map-get($t-fuente, 100)+30;
+		}
+	}
+	.seccion__pag{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1% 0% 1% 0%;
+		img{
+			width: 40%;
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			font-size: map-get($t-fuente, 100)+30;
+			h3{
+				text-align: center;
+			}
+		}
+	}
+	.seccion__pag--end{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1% 0% 1% 0%;
+		div{
+			display: flex;
+			flex-direction: column;
+			font-size: map-get($t-fuente, 100)+30;
+			h3{
+				text-align: center;
+			}
+		}
+	}
+	.equipo__titulo , .circuito__titulo , .galeria__titulo{
+		font-size: map-get($t-fuente, 50) ;
+	}
 	legend {
 		font-size:map-get($t-fuente, 100)+20;
 	}
@@ -478,6 +548,33 @@ legend {
 	}
 }
 @media screen and (max-width: 430px) {
+	.cab__nav {
+		flex-flow: wrap;
+		align-items: center;
+		flex-flow: column;
+	}
+	.cab__nav__list {
+		height: 30vh;
+		flex-flow: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.cab__nav__link {
+		font-size:map-get($t-fuente, 100)+20;
+	}
+	.destacado {
+		.dest__link {
+			img {
+				width: 30%;
+			}
+		}
+		font-size:map-get($t-fuente, 100)+30;
+		display: flex;
+		flex-direction: column;
+		flex-flow: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
 	main {
 		display: flex;
 		flex-direction: column;
@@ -508,68 +605,20 @@ legend {
                 align-items: center;
                 justify-content: space-around;
                 img {
-                    width: 50%;
+                    width: 70%;
                 }
             }
         }
-        .otras__secciones {
-            font-size:map-get($t-fuente, 100)+30;
-            flex-flow: wrap;
-        }
-	}
-	.cab__nav {
-		flex-flow: wrap;
-		align-items: center;
-		flex-flow: column;
-	}
-	.cab__nav__list {
-		height: 30vh;
-		flex-flow: column;
-		align-items: center;
-		justify-content: space-around;
-	}
-	.cab__nav__link {
-		font-size:map-get($t-fuente, 100)+20;
-	}
-	.destacado {
-		.dest__link {
-			img {
-				width: 30%;
-			}
-		}
-		font-size:map-get($t-fuente, 100)+30;
-		display: flex;
-		flex-direction: column;
-		flex-flow: wrap;
-		align-items: center;
-		justify-content: space-around;
-	}
-	.otras__secc__circuito {
-		height: 20vh;
-		width: 100%;
-		justify-content: center;
-	}
-	.otras__secc__equipo {
-		height: 20vh;
-		width: 100%;
-		justify-content: center;
-	}
-	.otras__secc__piloto {
-		height: 20vh;
-		width: 100%;
-		justify-content: center;
 	}
 	.pie__info {
 		font-size:map-get($t-fuente, 100);
 	}
-	.pie__redes {
-		div {
-			a {
-				img {
-					width: 8%;
-				}
-			}
-		}
+	.historia__seccion{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background-color:map-get($bg-color, rojo-claro);
+		font-size:100%;
 	}
 	.galeria__titulo {
 		height: 25vh;

@@ -18,10 +18,10 @@
     <body>
         <!--Comienzo del encabezado.-->
             
-        <header>
+        <header class="container-fluid">
                 
             <!--Barra de navegación entre Páginas en una lista desordenada.-->
-            <nav class="navbar navbar-expand-lg d-flex justify-content-end bg-light">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-end bg-light container-fluid">
                 <div class="container-fluid">
                     
                     <!--Logo con enlace a la Página de inicio.-->
@@ -56,19 +56,43 @@
         </header>
         <!--Cierre de encabezado.-->
         <!--Comienzo de la sección principal.-->
-        <main>
+        <main class="container-fluid">
             <!--Información sobre el Origen de la Formula 1 y sus Antecedentes.-->
-            <section class="historia__seccion container-fluid">
+            <div class="historia__titulo__pag container-fluid">
 
-                <h1>Comienzo de la Formula 1 e Introducción</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse nisi dicta rem maiores ipsa. Quaerat neque deleniti quidem quisquam nesciunt repellat, dolor deserunt repudiandae eos quo et nostrum debitis!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                <h1>Comienzos de la Formula 1 e Introducción</h1>
+
+            </div>
+
+            <section class="historia container-fluid">
+
+                <div class="container-fluid">
+
+                    <img src="../assets/img/before-formula-1.png" class="col-lg-4" alt="primeras carreras grand prix"/>
+                    <p class="col-lg-8">Las carreras de Gran Premio tienen sus raíces en las carreras automovilísticas surgidas en Francia en 1894. En un principio se trataba de eventos individuales, sin conexión y en caminos de tierra, prácticamente sin ninguna limitación. Antes de la Segunda Guerra Mundial se habían establecido las reglas para las competiciones de Grand Prix, que debían obedecer tanto autos como pilotos. Estas reglas, conocidas en su conjunto como Fórmula, no se concretaron hasta que en 1947 la antigua AIACR se reorganizó, pasándose a llamar la Federación Internacional del Automóvil, conocida por las siglas "FIA".</p>
+
+                </div>
+
+                <div class="container-fluid">   
+
+                    <p class="col-lg-8">Con sede central en París, al final de la temporada de 1949 anunció que para 1950 unirían varios Grandes Premios nacionales para crear un Campeonato Mundial de Pilotos, por lo que en 1950 se celebró el primer campeonato de Fórmula 1. El primer Gran Premio se realizó el 13 de mayo de 1950 en el circuito de Silverstone y fue ganado por el italiano Giuseppe Farina, consiguiendo además el campeonato de 1950 tras vencer a su compañero de equipo, el argentino Juan Manuel Fangio.</p>
+                    <img src="../assets/img/1950.png" class="col-lg-4" alt="comienzo formula 1"/>
+
+                </div>
+
+                <div class="container-fluid">
+                    <p>A cada carrera se le denomina Gran Premio y el torneo que las agrupa es el Campeonato Mundial de Fórmula 1. La mayoría de los circuitos de carreras donde se celebran los Grandes Premios son autódromos, aunque también se utilizan circuitos callejeros y anteriormente se utilizaron circuitos ruteros. A su vez, los automóviles utilizados son monoplazas con la última tecnología disponible, siempre limitadas por un reglamento técnico; algunas mejoras que fueron desarrolladas en la Fórmula 1 terminaron siendo utilizadas en automóviles comerciales, como el freno de disco.
+                    El inicio de la Fórmula 1 moderna se remonta al año 1950, en el que participaron escuderías como Ferrari, Alfa Romeo y Maserati. Algunas fueron reemplazadas por otras nuevas como McLaren, Williams, Red Bull y otras que volvieron como Mercedes que se han alzado varias veces con el Campeonato Mundial de Constructores. Por su parte, los pilotos deben contar con la superlicencia de la FIA para competir, que se obtiene por los resultados en otros campeonatos, como la Formula 2 y Formula 3 y otras competiciones regionales.
+                    </p>
+                </div>
+                
 
             </section>
 
             <!--Barra de navegación interna con elnaces a las distintas secciones.-->
-            <div class="contenedor__nav__historia container-fluid">
+            <div class="contenedor__nav__pag container-fluid">
 
-                <nav class="nav__pag">
+                <nav class="nav__pag container-fluid">
 
                     <div class="titulo__nav__pag">
                         <a href="#cambios">Cambios</a>
@@ -94,23 +118,23 @@
                 </div>
 
                 <div class="seccion__pag container-fluid">
-                    <img src="../assets/img/drs.png" width="30%" alt="drag reduction system">
+                    <img src="../assets/img/drs.png" class="col-3" alt="drag reduction system">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>Drag Reduction System</h3>
+                        <p>El alerón trasero móvil, comúnmente conocido como DRS (Drag Reduction System), es un dispositivo introducido en la temporada 2011 de Fórmula 1 con el propósito de reducir la carga aerodinámica del monoplaza y así aumentar su velocidad para facilitar los adelantamientos. Este sistema solo se puede usar cuando un coche esté menos de 1 segundo detrás de otro, la pista esté seca y hayan pasado 3 vueltas de carrera. </p>
                     </div>
                 </div>
-                <div class="seccion__pag container-fluid">
+                <div class="seccion__pag--end container-fluid">
+                    <img src="../assets/img/alerones.png" class="col-3" alt="drag reduction system">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>Alerones</h3>
+                        <p>A finales de los años 60, varios equipos empezaron a experimentar con los ya conocidos alerones. Los alerones de los coches de carreras funcionan según el mismo principio que los de los aviones, pero están configurados para provocar una fuerza descendente en lugar de una ascendente. Un coche de Fórmula 1 moderno es capaz de desarrollar 6 G de fuerza lateral en las curvas gracias a la carga aerodinámica. La carga aerodinámica que permite esto suele ser mayor que el peso del coche. Eso significa que, teóricamente, a altas velocidades, podrían conducir sobre la superficie invertida de una estructura adecuada; por ejemplo, sobre el techo.</p>
                     </div>
-                    <img src="../assets/img/drs.png" width="30%" alt="drag reduction system">
                 </div>
 
             </section>
 
-            <section id="innovaciones">
+            <section class="container-fluid" id="innovaciones">
 
                 <div class="titulo__seccion__pag">
                     <h2>Innovaciones</h2>
@@ -119,48 +143,48 @@
                 <div class="seccion__pag">
                     <img src="../assets/img/lotus.png" width="30%" alt="lotus coche">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>Efecto suelo</h3>
+                        <p>En el automovilismo se busca, al contrario que en aeronáutica, crear una zona de alta presión por encima del vehículo y una de baja presión por debajo. La diferencia de presiones provoca una succión que "aplasta" al vehículo contra el suelo (Downforce), mejorando el agarre, lo que se traduce en la posibilidad de trazar curvas a mayor velocidad. El equipo Lotus fue el primer equipo en implementarlo, pero, desgraciadamente, hubo accidentes y lo prohibieron rápidamente.</p>
                     </div>
                 </div>
 
-                <div class="seccion__pag">
+                <div class="seccion__pag--end container-fluid">
+                    <img src="../assets/img/formula1-motor-hibrido.jpg" width="30%" alt="drag reduction system">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>Motores Híbridos</h3>
+                        <p>Desde el 2014, la FIA anuncio un cambio de reglamento que introducia unos nuevos motores motores más sofisticados V6 turbo-híbridos de 1.6 litros con el objetivo de buscar una Fórmula 1 más barata, eficiente y concienciada con el medio ambiente. La nueva fórmula reintrodujo motores turboalimentados, pieza clave en propulsores que fueron desapareciendo paulatinamente a finales de la década de los 80 inicios de los 90 para dejar lugar a motores atmosféricos. De forma general, estos propulsores están formados por un motor de combustión interna o Internal Combustion Engine (ICE), que ofrece entre 750 y 800 CV y una parte eléctrica conocida como Energy Recovery System (ERS), similar al antiguo sistema eléctrico conocido como Kinetic Energy Recovery System (KERS), que ayuda a recargar energía al frenar. Este ERS es capaz de ofrecer 160 CV. </p>
                     </div>
-                    <img src="../assets/img/lotus.png" width="30%" alt="lotus coche">
                 </div>
 
             </section>
 
-            <section id="accidentes">
+            <section class="container-fluid" id="accidentes">
 
                 <div class="titulo__seccion__pag">
                     <h2>Accidentes</h2>
                 </div>
                 
-                <div class="seccion__pag">
+                <div class="seccion__pag container-fluid">
                     <img src="../assets/img/le-mans.png" width="30%" alt="le mans circuito">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>El desastre de Le Mans</h3>
+                        <p>El desastre de Le Mans fue un choque múltiple sucedido el 11 de junio de 1955 en el circuito de la Sarthe, cerca de Le Mans, durante la celebración de las 24 Horas de Le Mans, en el que murieron el piloto Pierre Levegh y 83 espectadores. Es considerada la mayor tragedia de la historia del automovilismo. Sin embargo, la carrera no se suspendió, y fue ganada por Mike Hawthorn, campeón de Fórmula 1 en 1958, junto a Ivor Bueb.</p>
                     </div>
                 </div>
 
-                <div class="seccion__pag">
+                <div class="seccion__pag--end container-fluid">
+                    <img src="../assets/img/senna.png" width="30%" alt="drag reduction system">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>Fallecimiento de Ayrton Senna</h3>
+                        <p>Durante la temporada, Senna seguía incómodo con el habitáculo del coche. Por eso solicitó una modificación en el mismo para lograr la comodidad deseada. En la siguiente carrera, ocurrió el accidente donde su coche no pudo dar una curva y chocó contra un paredón, la rueda delantera derecha se desprendió y golpeó su casco mientras que un brazo de la suspensión (de la misma rueda) le atravesó el casco y la visera, ocasionándole fracturas en el cráneo con pérdida de masa encefálica. La causa, aparentemente, fue la rotura de la barra de dirección de su monoplaza, la cual Senna había solicitado y había resultado ser de muy mala calidad.</p>
                     </div>
-                    <img src="../assets/img/le-mans.png" width="30%" alt="le mans circuito">
                 </div>
 
             </section>
 
-            <section id="records">
+            <section class="container-fluid" id="records">
 
-                <div class="titulo__seccion__pag">
+                <div class="titulo__seccion__pag container-fluid">
                     <h2>Records</h2>
                 </div>
                
@@ -168,16 +192,16 @@
                     <img src="../assets/img/hamilton.png" width="30%" alt="hamilton">
                     <div>
                         <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <p>Lewis Hamilton es uno de los mejores corredores que sigue corriendo en la actualidad que rompió records del mismísimo michael schumacher. Algunos de sus records son: mayor número de carreras consecutivas empezadas, mayor número de victorias, mayor número de victorias en su debut (junto con Jacques Villeneuve), mayor cantidad de puntos conseguidos, mayor número de carreras finalizadas en los puntos y también consecutivas, mayor número de poles, mayor número de podios, mayor número de victorias y mayor número de campeonatos de piloto (junto con michael schumacher).</p>
                     </div>
                 </div>
 
-                <div class="seccion__pag">
+                <div class="seccion__pag--end container-fluid">
+                    <img src="../assets/img/fangio1.png" width="30%" alt="drag reduction system">
                     <div>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo est, sint temporibus itaque ipsum dolores, odit, libero laboriosam voluptas tempore. Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!Fugit odio voluptatum veniam animi explicabo non repellat aut!</p>
+                        <h3>Fangio</h3>
+                        <p>Fangio fue uno de los primero corredores de Formula 1 y también unos de los mejores. Algunos de sus records son: ser el corredor más viejo en pista, mayor porcentaje de victorias, mayor porcentaje de poles, mayor porcentaje de podios y campeon con mayor número de escuderías.</p>
                     </div>
-                    <img src="../assets/img/hamilton.png" width="30%" alt="hamilton">
                 </div>
 
             </section>
@@ -187,7 +211,7 @@
         <!--Comienzo del Footer.-->
         <footer>
 
-            <div class="pie">
+            <div class="pie container-fluid">
                 <!--Información personal y enlace de Contacto.-->
                 <div class="pie__info">
 
@@ -224,7 +248,7 @@
 
             </div>
             <!--Los 4 Logos principales que usó la Formula 1 desde su creación, con enlace a la Página de Inicio.-->
-            <div class="pie__logo">
+            <div class="pie__logo container-fluid">
 
                 <div>
                     <a href="../index.html">

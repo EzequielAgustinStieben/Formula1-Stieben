@@ -1,0 +1,622 @@
+/*maps*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
+  
+  html {
+    font-size: 62.5%; }
+  
+  /*css de incio*/
+  .cab__logo {
+    width: 25vh; }
+  
+  .cab__nav {
+    display: flex;
+    justify-content: end; }
+  
+  .cab__nav__link {
+    font-size: 150%; }
+    .cab__nav__link a {
+      text-decoration: none; }
+  
+  .dest__titulo {
+    text-align: center;
+    background-color: #d2d2d2;
+    width: 100%;
+    font-size: 300%;
+    padding: 1%; }
+  
+  .carrusel-letras {
+    color: white;
+    font-size: 350%;
+    text-shadow: 2px 2px 3px #000000; }
+  
+  .historia__titulo {
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0% 0% 0%;
+    background-color: #ff4646; }
+    .historia__titulo a {
+      text-decoration: none; }
+      .historia__titulo a h1 {
+        color: black;
+        font-size: 150%; }
+  
+  .historia {
+    background-color: #ff4646;
+    font-size: 200%;
+    margin: 0% 0% 1% 0%; }
+    .historia div {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      padding: 1%; }
+  
+      .otras__secciones{
+
+        display: flex; 
+        align-items: center;
+        font-size: 150%;
+        background-color: #d2d2d2;
+        padding: 1%;
+    
+    }
+
+    .otras__secc__equipo:hover{
+        transform: translate(20%) scale(1.5);
+        
+    }
+
+    .otras__secc__piloto:hover{
+        transform: scale(1.5);
+        
+    }
+
+    .otras__secc__circuito:hover{
+        transform: translateX(-20%) scale(1.5);
+        
+    }
+
+
+    
+    .otras__secc__equipo , .otras__secc__piloto , .otras__secc__circuito{
+        background-position: center center;
+        background-size: cover;
+        margin: 0% 1% 0% 1%;
+        transition: transform 3s;
+        
+    }
+    
+    .otras__secc__equipo{
+    
+        background-image: url(../assets/img/ferrari-logo.png);
+    
+    
+    }
+    
+    .otras__secc__piloto{
+    
+        background-image: url(../assets/img/schumacher.png);
+        
+    }
+    
+    .otras__secc__circuito{
+    
+        background-image: url(../assets/img/brasil.png);
+    
+    }
+    
+    .otras__secc__equipo , .otras__secc__piloto , .otras__secc__circuito{
+    
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+        padding: 5%;
+    
+    }
+    
+    .otras__secc__equipo a , .otras__secc__piloto a , .otras__secc__circuito a{
+    
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+    
+    }
+  
+  .pie {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1%; }
+    .pie .pie__info {
+      font-size: 130%;
+      display: flex;
+      flex-direction: column;
+      text-align: start; }
+      .pie .pie__info a {
+        font-size: 140%;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder; }
+    .pie .pie__redes {
+      text-align: end; }
+  
+  .pie__logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center; }
+  
+  /*css historia*/
+  .historia__seccion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ff4646;
+    font-size: 200%; }
+  
+  .contenedor__nav__historia {
+    background-color: #2c2c2c; }
+    .contenedor__nav__historia .nav__pag {
+      display: flex; }
+      .contenedor__nav__historia .nav__pag .titulo__nav__pag {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #d2d2d2;
+        height: 7vh;
+        font-size: 200%;
+        margin: 1%; }
+        .contenedor__nav__historia .nav__pag .titulo__nav__pag a {
+          text-decoration: none;
+          color: #000000; }
+  
+  .titulo__seccion__pag {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d2d2;
+    height: 7vh;
+    margin: 1%; }
+    .titulo__seccion__pag h2 {
+      font-size: 200%; }
+  
+  .seccion__pag {
+    display: flex; }
+    .seccion__pag div {
+      display: flex;
+      flex-direction: column;
+      font-size: 200%; }
+      .seccion__pag div h3 {
+        text-align: center; }
+  
+  /*css equipos*/
+  .equipo__titulo {
+    background-image: url(../assets/img/equipos-logos.png);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .equipo__titulo h1 {
+      text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+      color: white;
+      font-size: 600%; }
+  
+  .contenedor__nav__equipo {
+    background-color: #2c2c2c; }
+  
+  a {
+    text-decoration: none;
+    color: #000000; }
+  
+  .titulo__seccion__equipo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d2d2;
+    height: 7vh;
+    margin: 1%; }
+    .titulo__seccion__equipo h2 {
+      font-size: 200%; }
+  
+  .seccion__equipo {
+    display: flex; }
+    .seccion__equipo div {
+      display: flex;
+      flex-direction: column;
+      font-size: 200%; }
+      .seccion__equipo div h3 {
+        text-align: center; }
+  
+  /*css pilotos*/
+  .piloto__titulo {
+    background-image: url(../assets/img/pilotos.png);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: contain; }
+    .piloto__titulo h1 {
+      text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+      color: white;
+      font-size: 600%; }
+  
+  .contenedor__nav__piloto {
+    background-color: #2c2c2c; }
+    .contenedor__nav__piloto .nav__piloto {
+      display: flex; }
+      .contenedor__nav__piloto .nav__piloto .titulo__nav__piloto {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #d2d2d2;
+        height: 7vh;
+        font-size: 200%;
+        margin: 1%; }
+        .contenedor__nav__piloto .nav__piloto .titulo__nav__piloto a {
+          text-decoration: none;
+          color: #000000; }
+  
+  .titulo__seccion__piloto {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d2d2;
+    height: 7vh;
+    margin: 1%; }
+    .titulo__seccion__piloto h2 {
+      font-size: 200%; }
+  
+  .seccion__piloto {
+    display: flex; }
+    .seccion__piloto div {
+      display: flex;
+      flex-direction: column;
+      font-size: 200%; }
+      .seccion__piloto div h3 {
+        text-align: center; }
+  
+  /*css circuitos*/
+  .circuito__titulo {
+    background-image: url(../assets/img/brasil.png);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .circuito__titulo h1 {
+      text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+      color: white;
+      font-size: 600%; }
+  
+  .contenedor__nav__circuito {
+    background-color: #2c2c2c; }
+    .contenedor__nav__circuito .nav__circuito {
+      display: flex; }
+      .contenedor__nav__circuito .nav__circuito .titulo__nav__circuito {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #d2d2d2;
+        height: 7vh;
+        font-size: 200%;
+        margin: 1%; }
+        .contenedor__nav__circuito .nav__circuito .titulo__nav__circuito a {
+          text-decoration: none;
+          color: #000000; }
+  
+  .titulo__seccion__circuito {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d2d2;
+    height: 7vh;
+    margin: 1%; }
+    .titulo__seccion__circuito h2 {
+      font-size: 200%; }
+  
+  .seccion__circuito {
+    display: flex; }
+    .seccion__circuito div {
+      display: flex;
+      flex-direction: column;
+      font-size: 200%; }
+      .seccion__circuito div h3 {
+        text-align: center; }
+  
+  /*css galeria*/
+  .galeria__titulo {
+    background-image: url(../assets/img/cars-drivers.png);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .galeria__titulo h1 {
+      text-shadow: 2px 2px 5px #000000 , 2px 2px 10px #000000;
+      color: white;
+      font-size: 600%; }
+  
+  .titulo__seccion__galeria {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #bebebe;
+    height: 10vh;
+    font-size: 250%;
+    margin: 1% 0% 1% 0%; }
+  
+  .contenedor__galeria {
+    width: 100%;
+    display: flex;
+    background-color: #ff4646; }
+    .contenedor__galeria div {
+      margin: 1%; }
+  
+  /*css contacto*/
+  fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/formula-1-2022.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh; }
+    fieldset .formulario {
+      width: 35%;
+      height: 100vh;
+      background-color: rgba(223, 223, 223, 0.678); }
+      fieldset .formulario .logo__form {
+        text-align: center;
+        margin-top: 2.5%; }
+        fieldset .formulario .logo__form a img {
+          width: 50%; }
+      fieldset .formulario .contenedor__nombre {
+        margin-top: 5%;
+        font-size: 150%; }
+      fieldset .formulario .contenedor__email {
+        margin-top: 5%;
+        font-size: 150%; }
+      fieldset .formulario .contenedor__mensaje {
+        margin-top: 5%;
+        font-size: 150%; }
+  
+  legend {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 150%; }
+  
+  @media screen and (max-width: 991px) {
+    .cab__nav {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+    .dest__titulo {
+      font-size: 200%; }
+    .historia {
+      font-size: 130%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: wrap;
+      justify-content: center;
+      width: 100%; }
+      .historia div {
+        font-size: 130%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        width: 100%; }
+        .historia div img {
+          width: 50%; }
+    .historia__titulo {
+      font-size: 130%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: wrap;
+      justify-content: center;
+      width: 100%; } }
+  
+  @media screen and (max-width: 768px) {
+    .dest__titulo {
+      font-size: 200%; }
+    .historia {
+      font-size: 120%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: wrap;
+      align-items: center; }
+      .historia div {
+        font-size: 120%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center; }
+    .historia__titulo {
+      font-size: 120%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: wrap;
+      align-items: center; }
+    .contenedor__galeria {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .contenedor__galeria div {
+        width: 100%; }
+    .contenedor__galeria {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .contenedor__galeria div {
+        width: 100%; }
+    .contenedor__galeria {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .contenedor__galeria div {
+        width: 100%; } }
+  
+  @media screen and (max-width: 600px) {
+    legend {
+      font-size: 120%; }
+    fieldset {
+      height: 100vh; }
+      fieldset .formulario {
+        width: 50%;
+        height: 80vh; }
+        fieldset .formulario .contenedor__nombre {
+          font-size: 120%; }
+        fieldset .formulario .contenedor__email {
+          font-size: 120%; }
+        fieldset .formulario .contenedor__mensaje {
+          font-size: 120%; } }
+  
+  @media screen and (max-width: 430px) {
+    main {
+      display: flex;
+      flex-direction: column; }
+      main .dest__titulo {
+        font-size: 150%; }
+      main .historia__titulo {
+        font-size: 120%;
+        font-size: 130%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around; }
+      main .historia {
+        font-size: 130%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around; }
+        main .historia div {
+          font-size: 130%;
+          display: flex;
+          flex-direction: column;
+          flex-flow: wrap;
+          align-items: center;
+          justify-content: space-around; }
+          main .historia div img {
+            width: 50%; }
+      main .otras__secciones {
+        font-size: 130%;
+        flex-flow: wrap; }
+    .cab__nav {
+      flex-flow: wrap;
+      align-items: center;
+      flex-flow: column; }
+    .cab__nav__list {
+      height: 30vh;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-around; }
+    .cab__nav__link {
+      font-size: 120%; }
+    .destacado {
+      font-size: 130%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: space-around; }
+      .destacado .dest__link img {
+        width: 30%; }
+    .otras__secc__circuito {
+      height: 20vh;
+      width: 100%;
+      justify-content: center; }
+    .otras__secc__equipo {
+      height: 20vh;
+      width: 100%;
+      justify-content: center; }
+    .otras__secc__piloto {
+      height: 20vh;
+      width: 100%;
+      justify-content: center; }
+    .pie__info {
+      font-size: 100%; }
+    .pie__redes div a img {
+      width: 8%; }
+    .historia__seccion {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: #ff4646;
+      font-size: 100%; }
+    .contenedor__nav__historia {
+      background-color: #2c2c2c; }
+      .contenedor__nav__historia .nav__pag {
+        display: flex; }
+        .contenedor__nav__historia .nav__pag .titulo__nav__pag {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          background-color: #d2d2d2;
+          height: 7vh;
+          font-size: 100%;
+          margin: 1%; }
+          .contenedor__nav__historia .nav__pag .titulo__nav__pag a {
+            text-decoration: none;
+            color: #000000; }
+    .titulo__seccion__pag {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d2d2d2;
+      height: 7vh;
+      margin: 1%; }
+      .titulo__seccion__pag h2 {
+        font-size: 100%; }
+    .seccion__pag {
+      display: flex; }
+      .seccion__pag div {
+        display: flex;
+        flex-direction: column;
+        font-size: 100%; }
+        .seccion__pag div h3 {
+          text-align: center; }
+    .galeria__titulo {
+      height: 25vh; }
+      .galeria__titulo h1 {
+        font-size: 350%; }
+    .titulo__monoplazas {
+      font-size: 175%;
+      height: 5vh; }
+    .titulo__pilotos {
+      font-size: 175%;
+      height: 5vh; }
+    .titulo__circuitos {
+      font-size: 175%;
+      height: 5vh; } }
+  
